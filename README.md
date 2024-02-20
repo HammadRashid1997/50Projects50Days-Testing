@@ -1,5 +1,5 @@
 # 50Projects50Days-Testing
-This repository has the complete E2E Tests for the projects developed in the repository 50Projects50Days using Cypress and Selenium. This repository is meant to help those who wish to start learning cypress.
+This repository has the complete E2E Tests for the projects developed in the repository 50Projects50Days using Cypress and Selenium. This repository is meant to help those who wish to start learning cypress and selenium for E2E testing.
 
 ### Repository Link
 You can view the original repository with the web applications on this link: [50Projects50Days](https://github.com/bradtraversy/50projects50days)
