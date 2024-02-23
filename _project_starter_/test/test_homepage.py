@@ -34,7 +34,3 @@ print(f'The text on the page is {heading_text}')
 print(f'The heading text color is {text_color}')
 
 driver.quit()
-
-
-
-
