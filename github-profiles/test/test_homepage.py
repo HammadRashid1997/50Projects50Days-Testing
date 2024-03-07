@@ -16,11 +16,16 @@ driver.get('http://127.0.0.1:5500/github-profiles/index.html')
 
 element = driver.find_element(By.TAG_NAME, 'body')
 
+background_color = element.value_of_css_property('background-color')
+
 time.sleep(3)
 
 if element:
     print('Body is visible')
 else:
     print('Body not visible')
+    
+print(f'The body background color is {background_color}')   
+
 # Close the browser window
 driver.quit()
