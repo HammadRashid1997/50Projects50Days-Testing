@@ -19,8 +19,8 @@ element = driver.find_element(By.ID, 'fast')
 time.sleep(3)
 
 if element:
-    print('The good container is found.')
+    print('The fast container is found.')
 else:
-    print('The good container is not found')
+    print('The fast container is not found')
 
 driver.quit()
