@@ -16,12 +16,15 @@ driver.get('http://127.0.0.1:5500/random-choice-picker/index.html')
 
 body = driver.find_element(By.TAG_NAME, 'body')
 
+body_color = body.value_of_css_property('background-color')
 time.sleep(3)
 
 if body:
     print('The body is present.')
 else:
     print('The body is not present.')
+
+print(f'Body background color: {body_color}')
 
 # Close the browser window
 driver.quit()
