@@ -17,6 +17,8 @@ driver.get('http://127.0.0.1:5500/sound-board/index.html')
 
 element = driver.find_element(By.TAG_NAME, 'body')  
 
+color = element.value_of_css_property('background-color')
+
 
 # Wait for the result (let's say for 3 seconds)
 time.sleep(3)
@@ -25,6 +27,8 @@ if element:
     print('The body is visible')
 else:
     print('The body is not visible')
+    
+print(f'The background color is {color}')
 
 # Close the browser window
 driver.quit()
