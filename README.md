@@ -14,4 +14,5 @@ Hammad Rashid
 <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/VSCode-Light.svg" title="VScode" alt="VSC" width="40" height="40"/>&nbsp;
 <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Github-Light.svg" title="Github" alt="github" width="40" height="40"/>&nbsp;
 <img src="https://static-00.iconduck.com/assets.00/cypress-icon-512x511-29zvfts6.png" title="Cypress" alt="cypress" width="40" height="40"/>&nbsp;
+<img src="https://www.svgrepo.com/show/374124/testcafe.svg" title="Test Cafe" alt="testcafe" width="60" height="50"/>&nbsp;
 <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Selenium.svg" title="Selenium" alt="Selenium" width="40" height="40"/>&nbsp;
