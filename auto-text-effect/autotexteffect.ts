@@ -31,7 +31,7 @@ test("The color of the text is accurate", async (t) => {
   const text = Selector("#text");
   const getTextColor = ClientFunction(() => {
     const textColor = document.querySelector("#text");
-    return window.getComputedStyle(textColor).getPropertyValue("color");
+    return textColor ? window.getComputedStyle(textColor).getPropertyValue("color") : null
   });
 
   const colorText = getTextColor();
