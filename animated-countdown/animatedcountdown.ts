@@ -1,5 +1,3 @@
-// Test Cafe testing code
-
 import { Selector, ClientFunction } from "testcafe";
 
 fixture("Animated Countdown").page(
@@ -33,7 +31,7 @@ test("The content Get Ready has correct color", async (t) => {
   const text = Selector(".counter h4");
   const getTextColor = ClientFunction(() => {
     const button = document.querySelector("h4");
-    return window.getComputedStyle(button).getPropertyValue("color");
+    return button ? window.getComputedStyle(button).getPropertyValue("color") : null;
   });
 
   const textColor = await getTextColor();
@@ -67,7 +65,7 @@ test("The numbers have the correct color", async (t) => {
 
   const getTextColor = ClientFunction(() => {
     const button = document.querySelector("span");
-    return window.getComputedStyle(button).getPropertyValue("color");
+    return button ? window.getComputedStyle(button).getPropertyValue("color"): null;
   });
 
   const textColor = await getTextColor();
@@ -93,7 +91,7 @@ test("The text go has the correct color being displayed", async (t) => {
   const text = Selector(".final h1");
   const getTextColor = ClientFunction(() => {
     const button = document.querySelector(".final h1");
-    return window.getComputedStyle(button).getPropertyValue("color");
+    return button ? window.getComputedStyle(button).getPropertyValue("color") : null;
   });
 
   const textColor = await getTextColor();
@@ -113,7 +111,7 @@ test("The background color of the button is correct and visible", async (t) => {
   const button = Selector("#replay");
   const getButtonColor = ClientFunction(() => {
     const button = document.querySelector("#replay");
-    return window.getComputedStyle(button).getPropertyValue("background-color");
+    return button ? window.getComputedStyle(button).getPropertyValue("background-color") : null;
   });
 
   const buttonColor = await getButtonColor();
@@ -134,7 +132,7 @@ test("The text color of the text is correct and visible", async (t) => {
   const text = Selector("#replay span");
   const getTextColor = ClientFunction(() => {
     const button = document.querySelector("#replay span");
-    return window.getComputedStyle(button).getPropertyValue("color");
+    return button ? window.getComputedStyle(button).getPropertyValue("color") : null;
   });
 
   const textColor = await getTextColor();
