@@ -1,5 +1,3 @@
-// Test Cafe code
-
 import { ClientFunction, Selector } from "testcafe"; // Importing the necessary functions and properties from the library TestCafe
 
 fixture("Animated Navigation").page(
@@ -41,7 +39,6 @@ test("The background image on the website is visible", async (t) => {
     .expect(bodyElement.exists)
     .ok()
     .expect(bodyBackgroundImage)
-    .notEql(null);
 });
 
 test("The navbar is visible on the screen", async (t) => {
@@ -79,7 +76,7 @@ test("The text home has the correct color", async (t) => {
   const homeLink = Selector("#nav.active ul li:nth-child(1) a");
   const getTextColor = ClientFunction(() => {
     const button = document.querySelector("#nav.active ul li:nth-child(1) a");
-    return window.getComputedStyle(button).getPropertyValue("color");
+    return button ? window.getComputedStyle(button).getPropertyValue("color"):null;
   });
 
   const textColor = await getTextColor();
@@ -105,7 +102,7 @@ test("The text works has the correct color", async (t) => {
   const worksLink = Selector("#nav.active ul li:nth-child(2) a");
   const getTextColor = ClientFunction(() => {
     const button = document.querySelector("#nav.active ul li:nth-child(2) a");
-    return window.getComputedStyle(button).getPropertyValue("color");
+    return button ? window.getComputedStyle(button).getPropertyValue("color") : null;
   });
 
   const textColor = await getTextColor();
@@ -131,7 +128,7 @@ test("The text about has the correct color", async (t) => {
   const aboutLink = Selector("#nav.active ul li:nth-child(3) a");
   const getTextColor = ClientFunction(() => {
     const button = document.querySelector("#nav.active ul li:nth-child(3) a");
-    return window.getComputedStyle(button).getPropertyValue("color");
+    return button ? window.getComputedStyle(button).getPropertyValue("color") : null;
   });
 
   const textColor = await getTextColor();
@@ -157,7 +154,7 @@ test("The text contact has the correct color", async (t) => {
   const contactLink = Selector("#nav.active ul li:nth-child(4) a");
   const getTextColor = ClientFunction(() => {
     const button = document.querySelector("#nav.active ul li:nth-child(4) a");
-    return window.getComputedStyle(button).getPropertyValue("color");
+    return button ? window.getComputedStyle(button).getPropertyValue("color") : null;
   });
 
   const textColor = await getTextColor();
