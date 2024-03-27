@@ -3,7 +3,7 @@
 Welcome to the repository for comprehensive end-to-end (E2E) tests designed for the projects featured in the "50Projects50Days" collection! 🎉 This resource leverages both Cypress and Selenium frameworks to provide practical insights and hands-on experience in E2E testing. Soon, we'll be adding E2E tests written using the TestCafe framework as well. 🛠️
 
 ### Repository Link
-Explore the original projects repository [here](https://github.com/bradtraversy/50projects50days). 💻
+I have performed E2E Testing for almost all of the projects stated in the original repository. This repository is meant for testing purposes. To explore the original projects repository, click [here](https://github.com/bradtraversy/50projects50days). 💻
 
 **Contributor:** 
 - Hammad Rashid 🙌
