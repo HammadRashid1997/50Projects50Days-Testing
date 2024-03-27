@@ -30,15 +30,17 @@ test("The button Magic is visible on the screen", async (t) => {
 
 test("The Magic button has correct background color", async (t) => {
   const magicButton = Selector("#btn");
-  const getBodyColor = ClientFunction(() => {
+  const getButtonColor = ClientFunction(() => {
     const button = document.querySelector("#btn");
-    return window.getComputedStyle(button).getPropertyValue("background-color");
+    return button ? window.getComputedStyle(button).getPropertyValue("background-color") : null;
   });
-  const bodyColor = await getBodyColor();
+
+  const bodyColor = await getButtonColor();
 
   await t
     .expect(magicButton.exists)
     .ok()
+    .expect(bodyColor).notEql(null) // Adding a null check
     .expect(bodyColor)
     .eql("rgb(249, 202, 36)");
 });
@@ -53,7 +55,7 @@ test("The Magic button has correct text color", async (t) => {
   const element = Selector("#btn");
   const getTextColor = ClientFunction(() => {
     const button = document.querySelector("#btn");
-    return window.getComputedStyle(document.body).getPropertyValue("color");
+    return button ? window.getComputedStyle(button).getPropertyValue("color"): null;
   });
 
   const textColor = await getTextColor();
