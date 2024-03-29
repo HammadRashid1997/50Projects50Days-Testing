@@ -13,6 +13,7 @@ I have performed E2E Testing for almost all of the projects stated in the origin
 
 ### 🛠️ Languages and Tools
 - <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/JavaScript.svg" title="JavaScript" alt="JavaScript" width="20" height="20"/> JavaScript
+- <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/TypeScript.svg" title="TypeScript" alt="TypeScript" width="20" height="20"/> TypeScript
 - <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Python-Light.svg" title="Python" alt="Python" width="20" height="20"/> Python
 - <img src="https://github.com/devicons/devicon/blob/master/icons/npm/npm-original-wordmark.svg" title="NPM" alt="npm" width="20" height="20"/> NPM
 - <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/VSCode-Light.svg" title="VScode" alt="VSC" width="20" height="20"/> VScode
