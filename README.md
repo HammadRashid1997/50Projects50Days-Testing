@@ -9,7 +9,7 @@ I have performed E2E Testing for almost all of the projects stated in the origin
 - Hammad Rashid 🙌
 
 **Collaborator:**
-- DevQA2001
+- DevQA2001 🙌
 
 ### 🛠️ Languages and Tools
 - <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/JavaScript.svg" title="JavaScript" alt="JavaScript" width="20" height="20"/> JavaScript
