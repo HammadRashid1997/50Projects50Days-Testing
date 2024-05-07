@@ -115,3 +115,24 @@ test('The results container is visible', async t => {
     await t.expect(result.exists).ok()
 })
 
+test('The 50 results with name, location, and image are being displayed', async t => {
+    // Scroll to the bottom of the container
+    const scrollToBottom = ClientFunction(() => {
+        document.querySelector('#result').scrollTo(0, document.querySelector('#result').scrollHeight);
+    });
+    await scrollToBottom();
+
+    // Iterate over each list item
+    for (let i = 0; i < 50; i++) {
+        // Selectors for name, location, and image elements in each list item
+        const nameElement = Selector(`#result li:nth-child(${i + 1}) h4`);
+        const locationElement = Selector(`#result li:nth-child(${i + 1}) p`);
+        const imageElement = Selector(`#result li:nth-child(${i + 1}) img`);
+
+        // Check if name, location, and image elements are visible
+        await t.expect(nameElement.exists).ok();
+        await t.expect(locationElement.exists).ok();
+        await t.expect(imageElement.exists).ok();
+    }
+});
+
