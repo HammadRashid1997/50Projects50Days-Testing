@@ -66,3 +66,52 @@ test('The settings container is visible', async t => {
     await t.expect(settings.exists).ok()
 })
 
+test('Password length input field works correctly', async t => {
+    const passwordLengthInput = Selector('#length');
+    await t.selectText(passwordLengthInput).pressKey('delete');
+
+    const newPasswordLength = 10;
+    await t.typeText(passwordLengthInput, newPasswordLength.toString());
+
+    const currentValue = await passwordLengthInput.value;
+    await t.expect(currentValue).eql(newPasswordLength.toString());
+})
+
+test('Checkbox toggles uppercase letters inclusion correctly', async t => {
+    const uppercaseCheckbox = Selector('#uppercase');
+    await t.expect(uppercaseCheckbox.checked).ok();
+    await t.click(uppercaseCheckbox);
+    await t.expect(uppercaseCheckbox.checked).notOk();
+})
+
+test('Checkbox toggles lowercase letters inclusion correctly', async t => {
+    const lowercaseCheckbox = Selector('#lowercase');
+    await t.expect(lowercaseCheckbox.checked).ok();
+    await t.click(lowercaseCheckbox);
+    await t.expect(lowercaseCheckbox.checked).notOk();
+});
+
+test('Checkbox toggles numbers inclusion correctly', async t => {
+    const numbersCheckbox = Selector('#numbers');
+    await t.expect(numbersCheckbox.checked).ok();
+    await t.click(numbersCheckbox);
+    await t.expect(numbersCheckbox.checked).notOk();
+})
+
+test('Checkbox toggles symbols inclusion correctly', async t => {
+    const symbolsCheckbox = Selector('#symbols');
+    await t.expect(symbolsCheckbox.checked).ok();
+    await t.click(symbolsCheckbox);
+    await t.expect(symbolsCheckbox.checked).notOk();
+})
+
+test('Generate password after setting the password length', async t => {
+    const passwordLengthInput = Selector('#length');
+    await t.selectText(passwordLengthInput).pressKey('delete');
+
+    const newPasswordLength = 10;
+    await t.typeText(passwordLengthInput, newPasswordLength.toString());
+
+    const generatePassword = Selector('#generate')
+    await t.expect(generatePassword.exists).ok().click(generatePassword)
+})
