@@ -5,10 +5,10 @@ Welcome to the repository for comprehensive end-to-end (E2E) tests designed for 
 ### Repository Link
 I have performed E2E Testing for almost all of the projects stated in the original repository. This repository is meant for testing purposes. To explore the original projects repository, click [here](https://github.com/bradtraversy/50projects50days). 💻
 
-**Contributor:** 
+### Contributor 
 - Hammad Rashid 🙌
 
-**Collaborator:**
+### Collaborator
 - DevQA2001 🙌
 
 ### 🛠️ Languages and Tools
